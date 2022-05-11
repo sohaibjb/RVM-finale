@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {background-image:url(:/background_img/images/images/bg.png);
+background-color:black;
+background-origin: cover;
+background-clip: padding;
+background-position: center;
+background-repeat: no-repeat;}
+
+#text_p , #text_c {color:white}
+#number_c, #number_p , #total_number ,#text_total_numb ,#text_u1 ,#number_un,#text_u2,#time {color:#737373;}
+
+#butt_finish , #butt_help{color:#737373;}
+
+#butt_finish, #total_number{border-radius: 55px;border: 2px solid #666;}
+#butt_help {border-radius: 20px;border: 2px solid #666;font: 25 20pt &quot;Bahnschrift Light SemiCondensed&quot;}
+
+#butt_finish:hover , #butt_help:hover {
+background-color:qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.306818 rgba(0, 0, 0, 5), stop:0.653409 rgba(0, 0, 0, 14), stop:0.926136 rgba(0, 0, 0, 30))
+}
+
+#number_c , #number_p{font: 25 50pt &quot;Bahnschrift Light SemiCondensed&quot;;}
+#total_number{font: 25 45pt &quot;Bahnschrift Light SemiCondensed&quot;;}
+#butt_finish{font: 25 25pt &quot;Bahnschrift Light SemiCondensed&quot;;}
+
+#text_p , #text_c {font: 25 20pt &quot;Bahnschrift SemiCondensed&quot;;}
+#text_total_numb{font: 15 20pt &quot;Bahnschrift SemiCondensed&quot;;}
+
+#level_c , #level_p{
+	backgroundcolor:rgba(0,0,0,0);
+	border: 1px solid grey;
+	border-radius: 2px;
+	}
+#level_p::chunk , #level_c::chunk{
+background-color: rgb(0, 255, 0);
+width: 8px;
+}
+
+#time{font: 25 20pt &quot;Bahnschrift SemiCondensed&quot;;}
+
+#text_u1 ,#text_u2{font: 25 10pt &quot;Bahnschrift Light SemiCondensed&quot;;}
+#number_un{font: 25 10pt&quot;Bahnschrift Light SemiCondensed&quot;;}
+#text_u1 ,#number_un,#text_u2 {color:rgb(103, 103, 103);}
+</string>
+   </property>
+   <widget class="QPushButton" name="butt_help">
+    <property name="geometry">
+     <rect>
+      <x>27</x>
+      <y>535</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="number_p">
+    <property name="geometry">
+     <rect>
+      <x>665</x>
+      <y>400</y>
+      <width>180</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Light SemiCondensed</family>
+      <pointsize>50</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>07</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="number_c">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>400</y>
+      <width>180</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Light SemiCondensed</family>
+      <pointsize>50</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>15</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="total_number">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>132</y>
+      <width>110</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Light SemiCondensed</family>
+      <pointsize>45</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>22</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="level_p">
+    <property name="geometry">
+     <rect>
+      <x>816</x>
+      <y>86</y>
+      <width>36</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="butt_finish">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>400</y>
+      <width>110</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift Light SemiCondensed</family>
+      <pointsize>25</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>FINISH</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_total_numb">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>90</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift SemiCondensed</family>
+      <pointsize>20</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nombre total</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_p">
+    <property name="geometry">
+     <rect>
+      <x>655</x>
+      <y>120</y>
+      <width>200</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift SemiCondensed</family>
+      <pointsize>20</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Plastique</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_c">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>120</y>
+      <width>200</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift SemiCondensed</family>
+      <pointsize>20</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Canette</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="level_c">
+    <property name="geometry">
+     <rect>
+      <x>331</x>
+      <y>86</y>
+      <width>36</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>1024</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>21-04-2022 15:02 </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_u1">
+    <property name="geometry">
+     <rect>
+      <x>406</x>
+      <y>280</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>You have inserted</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="number_un">
+    <property name="geometry">
+     <rect>
+      <x>499</x>
+      <y>280</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>500</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_u2">
+    <property name="geometry">
+     <rect>
+      <x>533</x>
+      <y>280</y>
+      <width>90</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>unkown objects</string>
+    </property>
+   </widget>
+   <zorder>butt_help</zorder>
+   <zorder>number_p</zorder>
+   <zorder>number_c</zorder>
+   <zorder>total_number</zorder>
+   <zorder>level_p</zorder>
+   <zorder>text_total_numb</zorder>
+   <zorder>text_c</zorder>
+   <zorder>level_c</zorder>
+   <zorder>butt_finish</zorder>
+   <zorder>text_p</zorder>
+   <zorder>time</zorder>
+   <zorder>text_u1</zorder>
+   <zorder>number_un</zorder>
+   <zorder>text_u2</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res_img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

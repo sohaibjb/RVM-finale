@@ -1,0 +1,24 @@
+# ///////////////////////////////////////////////////////////////
+#
+# BY: EZOUAGH YOUNESS
+# PROJECT MADE WITH: Qt Designer and PySide6
+# V: 1.0.0
+
+# ///////////////////////////////////////////////////////////////
+
+# MAIN FILE
+# ///////////////////////////////////////////////////////////////
+from PyQt5.QtGui import QIcon
+from main import *
+
+# GLOBALS
+# ///////////////////////////////////////////////////////////////
+from modules import Settings
+
+class UIFunctions(MainWindow):
+    # START - GUI DEFINITIONS
+    # ///////////////////////////////////////////////////////////////
+    def uiDefinitions(self):
+        # STANDARD TITLE BAR
+        self.setWindowFlags(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)

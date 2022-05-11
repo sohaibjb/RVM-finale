@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/images/senda-track-logo.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>images/icons/cil-data-transfer-up.png</file>
+    <file>images/icons/cil-envelope-letter.png</file>
+    <file>images/icons/pointer2.png</file>
+    <file>images/icons/about.png</file>
+    <file>images/icons/cil-drop.png</file>
+    <file>images/icons/cil-arrow-bottom.png</file>
+    <file>images/icons/cil-arrow-left.png</file>
+    <file>images/icons/cil-arrow-top.png</file>
+    <file>images/icons/cil-home.png</file>
+    <file>images/icons/cil-power-standby.png</file>
+    <file>images/icons/cil-settings.png</file>
+    <file>images/icons/cil-share-boxed.png</file>
+    <file>images/icons/cil-user.png</file>
+    <file>images/icons/cil-x.png</file>
+    <file>images/icons/icon_close.png</file>
+    <file>images/icons/icon_menu.png</file>
+    <file>images/icons/icon_minimize.png</file>
+    <file>images/icons/icon_restore.png</file>
+    <file>images/icons/icon_settings.png</file>
+  </qresource>
+</RCC>

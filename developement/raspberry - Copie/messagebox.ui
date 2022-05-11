@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>messagebox</class>
+ <widget class="QMainWindow" name="messagebox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="msgmenu">
+   <property name="styleSheet">
+    <string notr="true">#msgmenu {background:url(:/background_img/images/images/options.png);
+background-repeat: no-repeat;
+background-origin: cover;
+background-clip: padding;
+background-position: center;
+border-radius:0px;border: 0px solid #666;
+}
+
+#btn_scanqr , #btn_printer , #btn_donate {border: 0px solid #666;}
+#lbl_donate ,#lbl_printer ,#lbl_scanqr {color:rgb(62, 62, 62); font:20 14pt &quot;Piboto Condensed&quot;;
+}
+
+
+#optionstitle{color:rgb(62, 62, 62); font:20 17pt &quot;Piboto Condensed&quot;;}</string>
+   </property>
+   <widget class="QPushButton" name="btn_scanqr">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>108</y>
+      <width>172</width>
+      <height>272</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_printer">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>108</y>
+      <width>172</width>
+      <height>272</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_donate">
+    <property name="geometry">
+     <rect>
+      <x>529</x>
+      <y>108</y>
+      <width>172</width>
+      <height>272</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="optionstitle">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>701</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Veuillez choisir la méthode pour récupérer vos points </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_scanqr">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>330</y>
+      <width>172</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scanner le Qr code</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_printer">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>330</y>
+      <width>172</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Imprimer le ticket</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_donate">
+    <property name="geometry">
+     <rect>
+      <x>529</x>
+      <y>330</y>
+      <width>172</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offrir un don</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>optionstitle</zorder>
+   <zorder>lbl_scanqr</zorder>
+   <zorder>lbl_printer</zorder>
+   <zorder>lbl_donate</zorder>
+   <zorder>btn_scanqr</zorder>
+   <zorder>btn_printer</zorder>
+   <zorder>btn_donate</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res_img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
