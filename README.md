@@ -11,7 +11,7 @@
 <br>
 
 *Graduation Project - Electronic and Automatic Systems - State Engineering Diploma*  
-*ENSA Tangier · 2021–2022*
+*ENSA Tangier · 2022–2023*
 
 </div>
 
