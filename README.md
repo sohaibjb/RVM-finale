@@ -1,3 +1,24 @@
+<div align="center">
+  
+# Reverse Vending Machine (RVM)
+
+<img src="./assets/project2.png" width="420">
+
+<br>
+
+**AI • Computer Vision • Embedded Systems • • • • • **
+
+<br>
+
+*2nd year Engineering Project - Electronic and Automatic Systems Engineering*  
+*ENSA Tangier · 2021–2022*
+
+</div>
+
+<hr>
+
+
+
 # Reverse Vending Machine (RVM)
 
 
