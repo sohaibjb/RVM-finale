@@ -1,4 +1,4 @@
-# RVM
+# Reverse Vending Machine (RVM)
 
 RVM is a PyQt5-based GUI application developed for Raspberry Pi. It provides a touchscreen-friendly desktop UI, UI resources (icons and images), and a motor-control module so the application can control attached hardware (motors) from the GUI.
 
@@ -7,14 +7,6 @@ RVM is a PyQt5-based GUI application developed for Raspberry Pi. It provides a t
 - **Framework / runtime:** PyQt5 (Qt Designer .ui files compiled with pyuic5 / pyrcc5)
 - **Notable libraries:** PyQt5, standard Raspberry Pi GPIO libraries (used in motor control code)
 
-## What this repository contains (top-level overview)
-```
-developement/                      main development folder with multiple variants
-  backup_iosen/                      backup variant (UI + main.py + modules)
-  raspberry/                         primary Raspberry Pi variant
-README.md                           this file
-.gitattributes
-```
 
 ## How it's organized (important files)
 - developement/raspberry/
@@ -29,8 +21,6 @@ README.md                           this file
   - `motor.py` — motor control / hardware interface (GPIO interaction lives here).
   - `images/` — icons and images used by the UI.
 
-- developement/backup_iosen/
-  - A backup variant of the UI and main script with similar structure (`main.py`, `main.ui`, `modules/`, `motor.py`).
 
 ## How it fits together (runtime shape)
 1. The application starts in `main.py` or `raspberry_main.py` which create a QApplication and the main window object.
