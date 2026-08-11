@@ -1,5 +1,9 @@
 # Reverse Vending Machine (RVM)
 
+
+This project is a Qt-based recycling and waste-sorting vision mechanism . The main application provides a touchscreen desktop UI is built on a camera for waste classification with a TensorFlow Lite model and controlled GPIO hardware from a raspberry pi that work together to detect an item, classify it, and react through the UI and motors.
+
+
 RVM is a PyQt5-based GUI application developed for Raspberry Pi. It provides a touchscreen-friendly desktop UI, UI resources (icons and images), and a motor-control module so the application can control attached hardware (motors) from the GUI.
 
 ## Stack
