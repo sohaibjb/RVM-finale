@@ -10,7 +10,7 @@
 
 <br>
 
-*2nd year Engineering Project - Electronic and Automatic Systems Engineering*  
+*Graduation Project - Electronic and Automatic Systems - State Engineering Diploma*  
 *ENSA Tangier · 2021–2022*
 
 </div>
