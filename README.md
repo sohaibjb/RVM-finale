@@ -10,7 +10,7 @@
 
 <br>
 
-*Graduation Project - Electronic and Automatic Systems - State Engineering Diploma*  
+*Graduation Project - State Engineering Diploma - Electronic and Automatic Systems*  
 *ENSA Tangier · 2022–2023*
 
 </div>
@@ -19,7 +19,7 @@
 
 
 
-# Reverse Vending Machine (RVM) - Waste Classification and Automated Sorting Prototype
+# Reverse Vending Machine (RVM) - Automated Sorting Waste Classification Prototype
 
 
 This project is a Qt-based recycling and waste-sorting vision mechanism . The main application provides a touchscreen desktop UI is built on a camera for waste classification with a TensorFlow Lite model and controlled GPIO hardware from a raspberry pi that work together to detect an item, classify it, and react through the UI and motors.
