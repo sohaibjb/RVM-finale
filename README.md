@@ -6,7 +6,7 @@
 
 <br>
 
-**AI • Computer Vision • Embedded Systems • • • • • **
+**AI • Computer Vision • Embedded Systems • TensorFlow • OpenCV • Raspberry Pi • PyQt5 • Automation • Mechatronics • IoT**
 
 <br>
 
