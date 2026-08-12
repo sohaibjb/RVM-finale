@@ -53,22 +53,6 @@ RVM is a PyQt5-based GUI application developed for Raspberry Pi. It provides a t
 3. The UI code imports `modules/resources.py` so icons/images are available via Qt resource paths.
 4. When the user interacts with the UI, event handlers call helper functions in `modules/ui_functions.py` or `app_settings.py` and, for hardware actions, call `motor.py` to actuate motors via GPIO.
 
-## UML-like diagram (ASCII)
-
- +-----------------+        +--------------------+        +------------------+
- |  Qt Main Window | <----> |  UI modules (py)   | <----> | resources.py     |
- |  (main.py)      |        |  ui_main / handlers|        | (images/icons)   |
- +-----------------+        +--------------------+        +------------------+
-            |                         |
-            |                         V
-            |                  +----------------+
-            |                  | ui_functions   |
-            |                  +----------------+
-            V
-  +-----------------+
-  | motor.py (GPIO) |  <-- hardware interface (Raspberry Pi GPIO, motor drivers)
-  +-----------------+
-
 
 Mermaid-style (also included) — renderable on GitHub if your viewer supports Mermaid:
 roduce a guided walkthrough of the startup flow and key functions.
